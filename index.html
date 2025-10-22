@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vida Ativa - Exercícios Adaptados</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      background-color: #f5f8ff;
+      color: #1e3a8a;
+    }
+
+    .header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px;
+      background-color: #fff;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
+
+    .logo {
+      font-size: 1.5em;
+      font-weight: bold;
+      color: #2563eb;
+    }
+
+    .menu a {
+      margin: 0 10px;
+      text-decoration: none;
+      color: #1e3a8a;
+      font-weight: 500;
+    }
+
+    .menu a:hover {
+      text-decoration: underline;
+    }
+
+    .lang {
+      margin-left: 15px;
+      padding: 5px;
+      border-radius: 5px;
+      border: 1px solid #2563eb;
+      color: #2563eb;
+      background-color: white;
+    }
+
+    .hero {
+      text-align: center;
+      padding: 80px 20px;
+      background: linear-gradient(to bottom, #3b82f6, #60a5fa);
+      color: white;
+    }
+
+    .hero h1 {
+      font-size: 2em;
+      margin-bottom: 10px;
+    }
+
+    .hero p {
+      font-size: 1.1em;
+      margin-bottom: 20px;
+    }
+
+    .btn {
+      background-color: white;
+      color: #2563eb;
+      padding: 10px 20px;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: 0.2s;
+    }
+
+    .btn:hover {
+      background-color: #eff6ff;
+    }
+
+    .content {
+      padding: 60px 20px;
+      text-align: center;
+    }
+
+    .content h2 {
+      color: #1e40af;
+      margin-bottom: 15px;
+    }
+
+    .card {
+      background-color: #fff;
+      border-radius: 10px;
+      padding: 20px;
+      width: 300px;
+      margin: 20px auto;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
+
+    .card button {
+      margin-top: 10px;
+      background-color: #2563eb;
+      color: white;
+      border: none;
+      padding: 10px 15px;
+      border-radius: 6px;
+      cursor: pointer;
+    }
+
+    .card button:hover {
+      background-color: #1e40af;
+    }
+
+    .prof-grid {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+
+    .prof-card {
+      background-color: white;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      width: 200px;
+    }
+
+    .planos-grid {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+
+    .plano {
+      background-color: white;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      width: 220px;
+      transition: transform 0.2s;
+    }
+
+    .plano:hover {
+      transform: translateY(-5px);
+    }
+
+    .destaque {
+      border: 3px solid #2563eb;
+    }
+
+    .profissional {
+      border: 3px solid #1e40af;
+    }
+
+    .footer {
+      text-align: center;
+      padding: 20px;
+      background-color: #fff;
+      margin-top: 50px;
+      color: #1e3a8a;
+      font-size: 0.9em;
+    }
+
+    /* Modal */
+    .modal {
+      display: none;
+      position: fixed;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      background-color: rgba(0,0,0,0.5);
+      justify-content: center;
+      align-items: center;
+    }
+
+    .modal-content {
+      background-color: white;
+      padding: 20px;
+      border-radius: 10px;
+      text-align: center;
+      width: 300px;
+    }
+
+    .close {
+      float: right;
+      cursor: pointer;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <header class="header">
+    <div class="logo">Vida Ativa</div>
+    <nav class="menu">
+      <a href="#home">Início</a>
+      <a href="exercicios.html">Exercícios</a>
+      <a href="profissionais.html">Profissionais</a>
+      <a href="#planos">Planos</a>
+      <select id="lang" class="lang">
+        <option value="pt">Português</option>
+        <option value="es">Español</option>
+      </select>
+    </nav>
+  </header>
+
+  <section id="home" class="hero">
+    <h1 id="title">Mantenha-se ativo, saudável e motivado</h1>
+    <p id="subtitle">Exercícios adaptados, metas e recompensas para idosos.</p>
+    <a href="cadastro.html" class="btn" id="cta">Comece agora</a>
+  </section>
+
+  <section id="exercicios" class="content">
+    <h2 id="exTitle">Exercícios Adaptados</h2>
+    <p id="exText">Encontre treinos leves e seguros criados por fisioterapeutas e personal trainers.</p>
+  </section>
+
+  <section id="gamificacao" class="content">
+    <h2 id="gamTitle">Metas e Recompensas</h2>
+    <p id="gamText">Ganhe moedas ao cumprir metas de passos e exercícios!</p>
+    <div class="card">
+      <p>Você tem <strong id="coins">120 moedas</strong></p>
+      <button onclick="addCoins()">Completar meta diária</button>
+    </div>
+  </section>
+
+  <section id="profissionais" class="content">
+    <h2 id="profTitle">Profissionais de Saúde</h2>
+    <p id="profText">Personal trainers, fisioterapeutas e nutricionistas disponíveis para acompanhamento personalizado.</p>
+    <div class="prof-grid">
+      <div class="prof-card">👩‍⚕️ Ana - Fisioterapeuta</div>
+      <div class="prof-card">🏋️ João - Personal Trainer</div>
+      <div class="prof-card">🥗 Carla - Nutricionista</div>
+    </div>
+  </section>
+
+  <section id="planos" class="content planos">
+    <h2 id="planTitle">Planos</h2>
+    <div class="planos-grid">
+      <div class="plano">
+        <h3>Gratuito</h3>
+        <p>Acesso a vídeos e dicas básicas.</p>
+        <strong>R$ 0/mês</strong>
+      </div>
+      <div class="plano destaque">
+        <h3>Premium</h3>
+        <p>Treinos personalizados, acompanhamento e recompensas exclusivas.</p>
+        <strong>R$ 29,90/mês</strong>
+      </div>
+      <div class="plano profissional">
+        <h3>Profissional</h3>
+        <p>Exiba seus serviços no site e alcance novos clientes.</p>
+        <strong>R$ 89,90/mês</strong>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <p>© 2025 Vida Ativa — Todos os direitos reservados</p>
+  </footer>
+
+  <script>
+    let moedas = 120;
+
+    function addCoins() {
+      moedas += 10;
+      document.getElementById('coins').textContent = moedas + ' moedas';
+      alert('Parabéns! Você ganhou 10 moedas 🎉');
+    }
+
+    // Troca de idioma
+    document.getElementById('lang').addEventListener('change', function() {
+      const lang = this.value;
+      if (lang === 'es') {
+        document.getElementById('title').textContent = 'Mantente activo, saludable y motivado';
+        document.getElementById('subtitle').textContent = 'Ejercicios adaptados, metas y recompensas para mayores.';
+        document.getElementById('cta').textContent = 'Comienza ahora';
+        document.getElementById('exTitle').textContent = 'Ejercicios Adaptados';
+        document.getElementById('exText').textContent = 'Encuentra entrenamientos seguros creados por fisioterapeutas y entrenadores personales.';
+        document.getElementById('gamTitle').textContent = 'Metas y Recompensas';
+        document.getElementById('gamText').textContent = 'Gana monedas al cumplir tus metas diarias.';
+        document.getElementById('profTitle').textContent = 'Profesionales de Salud';
+        document.getElementById('profText').textContent = 'Entrenadores, fisioterapeutas y nutricionistas disponibles para ti.';
+        document.getElementById('planTitle').textContent = 'Planes';
+      } else {
+        document.getElementById('title').textContent = 'Mantenha-se ativo, saudável e motivado';
+        document.getElementById('subtitle').textContent = 'Exercícios adaptados, metas e recompensas para idosos.';
+        document.getElementById('cta').textContent = 'Comece agora';
+        document.getElementById('exTitle').textContent = 'Exercícios Adaptados';
+        document.getElementById('exText').textContent = 'Encontre treinos leves e seguros criados por fisioterapeutas e personal trainers.';
+        document.getElementById('gamTitle').textContent = 'Metas e Recompensas';
+        document.getElementById('gamText').textContent = 'Ganhe moedas ao cumprir metas de passos e exercícios!';
+        document.getElementById('profTitle').textContent = 'Profissionais de Saúde';
+        document.getElementById('profText').textContent = 'Personal trainers, fisioterapeutas e nutricionistas disponíveis para acompanhamento personalizado.';
+        document.getElementById('planTitle').textContent = 'Planos';
+      }
+    });
+  </script>
+</body>
+</html>

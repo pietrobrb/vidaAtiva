@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Exercícios - Vida Ativa</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: linear-gradient(135deg, #007BFF, #5dade2);
+      color: #333;
+    }
+
+    header {
+      background-color: #fff;
+      padding: 20px;
+      text-align: center;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+
+    header h1 {
+      color: #007BFF;
+      margin: 0;
+    }
+
+    .intro {
+      text-align: center;
+      color: #fff;
+      padding: 40px 20px 20px;
+    }
+
+    .intro h2 {
+      font-size: 28px;
+      margin-bottom: 10px;
+    }
+
+    .intro p {
+      font-size: 18px;
+      max-width: 600px;
+      margin: 0 auto;
+      line-height: 1.5;
+    }
+
+    .exercises {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      padding: 20px;
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+
+    .card {
+      background-color: #fff;
+      border-radius: 15px;
+      padding: 20px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      text-align: center;
+      transition: transform 0.3s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+    }
+
+    .card img {
+      width: 100%;
+      border-radius: 10px;
+      height: 150px;
+      object-fit: cover;
+      margin-bottom: 15px;
+    }
+
+    .card h3 {
+      color: #007BFF;
+      margin-bottom: 10px;
+    }
+
+    .card p {
+      font-size: 15px;
+      line-height: 1.4;
+    }
+
+    .cta {
+      text-align: center;
+      margin: 40px 0;
+    }
+
+    .cta button {
+      background-color: #fff;
+      color: #007BFF;
+      border: 2px solid #fff;
+      font-size: 18px;
+      padding: 12px 30px;
+      border-radius: 25px;
+      cursor: pointer;
+      font-weight: bold;
+      transition: all 0.3s ease;
+    }
+
+    .cta button:hover {
+      background-color: #007BFF;
+      color: #fff;
+      border-color: #007BFF;
+    }
+
+    footer {
+      background-color: #fff;
+      text-align: center;
+      padding: 15px;
+      font-size: 14px;
+      color: #555;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Vida Ativa</h1>
+  </header>
+
+  <section class="intro">
+    <h2>Movimente-se com segurança e alegria!</h2>
+    <p>Comece hoje com exercícios simples e seguros, feitos especialmente para você. 
+       Abaixo estão algumas sugestões gratuitas para aquecer o corpo e melhorar o humor!</p>
+  </section>
+
+  <section class="exercises">
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1584466977773-e625c37cdd16" alt="Alongamento">
+      <h3>Alongamento Matinal</h3>
+      <p>5 minutos de alongamento leve para acordar o corpo e melhorar a flexibilidade.</p>
+    </div>
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1605296867304-46d5465a13f1" alt="Caminhada leve">
+      <h3>Caminhada Leve</h3>
+      <p>20 minutos de caminhada em ritmo confortável ajudam o coração e a respiração.</p>
+    </div>
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1599058917212-d750089bc07e" alt="Exercício sentado">
+      <h3>Exercícios Sentados</h3>
+      <p>Perfeito para quem precisa de estabilidade — fortalece pernas e braços com segurança.</p>
+    </div>
+  </section>
+
+  <div class="cta">
+    <p style="color: white; font-size: 18px;">Quer acesso a planos, metas e recompensas?</p>
+    <button onclick="window.location.href='cadastro.html'">Cadastre-se Gratuitamente</button>
+  </div>
+
+  <footer>
+    © 2025 Vida Ativa — Seu movimento começa aqui.
+  </footer>
+</body>
+</html>

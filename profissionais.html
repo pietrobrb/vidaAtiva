@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Profissionais - Vida Ativa</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: linear-gradient(135deg, #007BFF, #5dade2);
+      color: #333;
+    }
+
+    header {
+      background-color: #fff;
+      padding: 20px;
+      text-align: center;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+
+    header h1 {
+      color: #007BFF;
+      margin: 0;
+    }
+
+    .intro {
+      text-align: center;
+      color: #fff;
+      padding: 40px 20px 20px;
+    }
+
+    .intro h2 {
+      font-size: 28px;
+      margin-bottom: 10px;
+    }
+
+    .intro p {
+      font-size: 18px;
+      max-width: 600px;
+      margin: 0 auto;
+      line-height: 1.5;
+    }
+
+    .profissionais {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      padding: 20px;
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+
+    .card {
+      background-color: #fff;
+      border-radius: 15px;
+      padding: 20px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      text-align: center;
+      transition: transform 0.3s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+    }
+
+    .card img {
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-bottom: 15px;
+      border: 3px solid #007BFF;
+    }
+
+    .card h3 {
+      color: #007BFF;
+      margin-bottom: 5px;
+    }
+
+    .card p {
+      font-size: 15px;
+      line-height: 1.4;
+      margin-bottom: 10px;
+    }
+
+    .btn {
+      background-color: #007BFF;
+      color: #fff;
+      border: none;
+      border-radius: 8px;
+      padding: 10px 20px;
+      font-size: 15px;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+
+    .btn:hover {
+      background-color: #0056b3;
+    }
+
+    .cta {
+      text-align: center;
+      margin: 40px 0;
+    }
+
+    .cta button {
+      background-color: #fff;
+      color: #007BFF;
+      border: 2px solid #fff;
+      font-size: 18px;
+      padding: 12px 30px;
+      border-radius: 25px;
+      cursor: pointer;
+      font-weight: bold;
+      transition: all 0.3s ease;
+    }
+
+    .cta button:hover {
+      background-color: #007BFF;
+      color: #fff;
+      border-color: #007BFF;
+    }
+
+    footer {
+      background-color: #fff;
+      text-align: center;
+      padding: 15px;
+      font-size: 14px;
+      color: #555;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Vida Ativa</h1>
+  </header>
+
+  <section class="intro">
+    <h2>Profissionais Parceiros</h2>
+    <p>Conheça nossos personal trainers, fisioterapeutas e nutricionistas prontos para ajudar você a ter uma vida mais ativa e saudável.</p>
+  </section>
+
+  <section class="profissionais">
+    <div class="card">
+      <img src="https://randomuser.me/api/portraits/men/45.jpg" alt="Personal Trainer">
+      <h3>Rafael Mendes</h3>
+      <p><strong>Personal Trainer</strong><br>Especialista em treino funcional e mobilidade para idosos.</p>
+      <button class="btn">Entrar em Contato</button>
+    </div>
+
+    <div class="card">
+      <img src="https://randomuser.me/api/portraits/women/65.jpg" alt="Fisioterapeuta">
+      <h3>Ana Paula Lima</h3>
+      <p><strong>Fisioterapeuta</strong><br>Reabilitação motora e prevenção de quedas.</p>
+      <button class="btn">Entrar em Contato</button>
+    </div>
+
+    <div class="card">
+      <img src="https://randomuser.me/api/portraits/women/68.jpg" alt="Nutricionista">
+      <h3>Mariana Souza</h3>
+      <p><strong>Nutricionista</strong><br>Planos alimentares personalizados para o envelhecimento saudável.</p>
+      <button class="btn">Entrar em Contato</button>
+    </div>
+
+    <div class="card">
+      <img src="https://randomuser.me/api/portraits/men/51.jpg" alt="Fisioterapeuta">
+      <h3>Carlos Alberto</h3>
+      <p><strong>Fisioterapeuta</strong><br>Exercícios de postura e fortalecimento articular.</p>
+      <button class="btn">Entrar em Contato</button>
+    </div>
+  </section>
+
+  <div class="cta">
+    <p style="color: white; font-size: 18px;">Quer falar com um profissional? Crie sua conta gratuita!</p>
+    <button onclick="window.location.href='cadastro.html'">Cadastre-se Agora</button>
+  </div>
+
+  <footer>
+    © 2025 Vida Ativa — Saúde e movimento para todas as idades.
+  </footer>
+</body>
+</html>
