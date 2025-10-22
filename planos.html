@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Planos - Vida Ativa</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: linear-gradient(135deg, #007BFF, #5dade2);
+      color: #333;
+    }
+
+    header {
+      background-color: #fff;
+      padding: 20px;
+      text-align: center;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+
+    header h1 {
+      color: #007BFF;
+      margin: 0;
+    }
+
+    .intro {
+      text-align: center;
+      color: #fff;
+      padding: 40px 20px 20px;
+    }
+
+    .intro h2 {
+      font-size: 28px;
+      margin-bottom: 10px;
+    }
+
+    .intro p {
+      font-size: 18px;
+      max-width: 600px;
+      margin: 0 auto;
+      line-height: 1.5;
+    }
+
+    .planos {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+      padding: 30px;
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+
+    .plano-card {
+      background-color: #fff;
+      border-radius: 15px;
+      padding: 25px;
+      width: 250px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      text-align: center;
+      transition: transform 0.3s ease;
+    }
+
+    .plano-card:hover {
+      transform: translateY(-5px);
+    }
+
+    .plano-card h3 {
+      color: #007BFF;
+      margin-bottom: 15px;
+    }
+
+    .plano-card p {
+      font-size: 15px;
+      line-height: 1.5;
+      margin-bottom: 20px;
+    }
+
+    .plano-card strong {
+      font-size: 18px;
+      display: block;
+      margin-bottom: 15px;
+    }
+
+    .btn {
+      background-color: #007BFF;
+      color: #fff;
+      border: none;
+      border-radius: 8px;
+      padding: 10px 20px;
+      font-size: 16px;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+
+    .btn:hover {
+      background-color: #0056b3;
+    }
+
+    .destaque {
+      border: 3px solid #2563eb;
+    }
+
+    .cta {
+      text-align: center;
+      margin: 40px 0;
+    }
+
+    .cta button {
+      background-color: #fff;
+      color: #007BFF;
+      border: 2px solid #fff;
+      font-size: 18px;
+      padding: 12px 30px;
+      border-radius: 25px;
+      cursor: pointer;
+      font-weight: bold;
+      transition: all 0.3s ease;
+    }
+
+    .cta button:hover {
+      background-color: #007BFF;
+      color: #fff;
+      border-color: #007BFF;
+    }
+
+    footer {
+      background-color: #fff;
+      text-align: center;
+      padding: 15px;
+      font-size: 14px;
+      color: #555;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Vida Ativa</h1>
+  </header>
+
+  <section class="intro">
+    <h2>Escolha o plano ideal para você</h2>
+    <p>Planos adaptados para usuários idosos e profissionais de saúde. Descubra os benefícios de cada um!</p>
+  </section>
+
+  <section class="planos">
+    <div class="plano-card">
+      <h3>Gratuito</h3>
+      <p>Acesso aos conteúdos básicos: vídeos e dicas de exercícios.</p>
+      <strong>R$ 0/mês</strong>
+      <button onclick="window.location.href='cadastro.html'">Cadastre-se</button>
+    </div>
+
+    <div class="plano-card destaque">
+      <h3>Premium</h3>
+      <p>Treinos personalizados, acompanhamento profissional e recompensas exclusivas.</p>
+      <strong>R$ 29,90/mês</strong>
+      <button onclick="window.location.href='cadastro.html'">Assine Premium</button>
+    </div>
+
+    <div class="plano-card">
+      <h3>Profissional</h3>
+      <p>Exiba seus serviços no site e alcance novos clientes. Mensalidade para manter o perfil ativo.</p>
+      <strong>R$ 89,90/mês</strong>
+      <button onclick="window.location.href='cadastro.html'">Seja Profissional</button>
+    </div>
+  </section>
+
+  <div class="cta">
+    <p style="color: white; font-size: 18px;">Quer acesso a todas as funcionalidades? Cadastre-se agora!</p>
+    <button onclick="window.location.href='cadastro.html'">Criar Conta Gratuita</button>
+  </div>
+
+  <footer>
+    © 2025 Vida Ativa — Escolha o plano que mais combina com você.
+  </footer>
+</body>
+</html>
