@@ -38,7 +38,7 @@ Currently expanding my knowledge in **Javascript**, **PostgreSQL**, and **Python
 
 ### 🌐 Connect with Me
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-Pietro%20Soares-blue?style=for-the-badge&logo=linkedin)](https://www.linkedin.com/in/pietro-soares-578832286)
-[![Email](https://img.shields.io/badge/Email-pietro.soares11%40gmail.com-red?style=for-the-badge&logo=gmail&logoColor=white)](mailto:pietro.soares11@outlook.com)
+[![Email](https://img.shields.io/badge/Email-pietro.soares11%40outlook.com-red?style=for-the-badge&logo=microsoft-outlook&logoColor=white)](mailto:pietro.soares11@outlook.com)
 
 ---
 
